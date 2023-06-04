@@ -1,0 +1,13 @@
+from numpy import linspace
+from numpy import sin
+from numpy import pi
+
+x=linspace(-pi,pi,20)
+y=sin(x)
+from matplotlib import pyplot
+d1=pyplot.plot(x,y)
+pyplot.show(d1)
+
+
+
+

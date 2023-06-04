@@ -1,0 +1,14 @@
+"Este metodo permite importar y exportar desde archivos de texto con datos separados por comas, es decir archivos *.csv"
+"Cualquier tabla de Microsoft Excel se puede exportar como *.csv"
+
+from numpy import genfromtxt
+my_data = genfromtxt('/home/luciano/Desktop/Trabajo/Doctorado/Doctorado/test.csv', delimiter=',')
+
+"el ejemplo anterior incorpora la ruta completa del archivo; si ponemos solo el nombre, tiene que estar en la carpeta de trabajo"
+
+from numpy import savetxt
+savetxt("test4.csv", a, delimiter=",")
+
+"el ultimo ejemplo guarda como *.csv, en la carpeta de trabajo"
+
+
